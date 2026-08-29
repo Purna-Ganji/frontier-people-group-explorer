@@ -484,8 +484,17 @@ function App() {
               className="shortlist-item"
               key={`${group.name}-${group.country}`}
             >
-              <strong>{group.name}</strong>
-              <span>{group.country}</span>
+              <div>
+                <strong>{group.name}</strong>
+                <span>{group.country}</span>
+              </div>
+          
+              <button
+                type="button"
+                onClick={() => toggleShortlist(group)}
+              >
+                Remove
+              </button>
             </div>
           ))}
         </aside>
