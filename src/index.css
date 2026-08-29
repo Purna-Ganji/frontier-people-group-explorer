@@ -182,10 +182,25 @@ header p {
 
 .shortlist-item {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
+}
+
+.shortlist-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.shortlist-item button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: #b91c1c;
 }
 
 /* Medium screens */
